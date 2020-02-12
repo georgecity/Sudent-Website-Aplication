@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}"/>
+    <script src="../static/js/main.js" th:src="@{/js/main.js}"></script>
+    <title>Computer Science</title>
+</head>
+<body>
+
+<main>
+    <header>
+        <img src="../static/images/city.jpg" th:src="@{/images/city.jpg}" alt="student banner"/>
+        <h2>Computer Science</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" th:href="@{/}">About Us</a></li>
+            <div class="dropdown">
+                <li>
+                    <a onclick="show_menu('Courses')" class="dropdownlink">Available Courses</a>
+                </li>
+                <div id="Courses" class="menuitems">
+                    <li><a href="maths.html" th:href="@{/maths}">Mathematics</a></li>
+                    <li><a href="physics.html" th:href="@{/physics}">Physics</a> </li>
+                    <li><a href="mechaelectrical.html" th:href="@{/mechaelectrical}">Mechanical and electrical Engineering</a> </li>
+                    <li><a href="medicine.html" th:href="@{/medicine}">Medicine</a> </li>
+                    <li><a href="mechanical.html" th:href="@{/mechanical}">Mechanical</a> </li>
+                    <li><a href="chemistry.html" th:href="@{/chemistry}">Chemistry</a></li>
+                    <li><a href="compscience.html" th:href="@{/compscience}">Computer Science</a> </li>
+                    <li><a href="law.html" th:href="@{/law}">Law</a> </li>
+                    <li><a href="economics.html" th:href="@{/economics}">Economics and Management</a> </li>
+                    <li><a href="biology.html" th:href="@{/biology}">Biology</a> </li>
+                    <li><a href="neuroscience.html" th:href="@{/neuroscience}">Neuroscience</a></li>
+                    <li><a href="politics.html" th:href="@{/politics}">Politics</a> </li>
+                    <li><a href="biomedical.html" th:href="@{/biomedical}">Biomedical Science</a> </li>
+                    <li><a href="nutrition.html" th:href="@{/nutrition}">Nutrition</a> </li>
+                    <li><a href="moleculargen.html" th:href="@{/moleculargen}">Molecular Genetics</a> </li>
+
+                </div>
+            </div>
+            <div class="dropdown">
+                <li>
+                    <a onclick="show_menu('Universities')" class="dropdownlink">Universities</a>
+                </li>
+                <div id="Universities" class="menuitems">
+                    <li><a href="aberdeen.html" th:href="@{/aberdeen}">Aberdeen University</a> </li>
+                    <li><a href="kings.html" th:href="@{/kings}">King's College</a> </li>
+                    <li><a href="oxford.html" th:href="@{/oxford}">Oxford University</a> </li>
+
+
+                </div>
+            </div>
+
+            <li><a href="register.html" th:href="@{/register}">Register</a></li>
+            <li><a href="apply.html" th:href="@{/apply}">Apply</a></li>
+            <li><a href="profile.html" th:href="@{/profile}">My Student Profile</a></li>
+        </ul>
+
+    </nav>
+    <article>
+        <p>Computer Science is about understanding computer systems and networks at a deep level.
+            Computers and the programs they run are among the most complex products ever created;
+            designing and using them effectively presents immense challenges. Facing these challenges is the aim of Computer Science.</p>
+
+
+        <p>Computer Science can be studied for three years (BA) or four years (Master of Computer Science).
+            The fourth year allows the study of advanced topics and an in-depth research project.
+            Students do not need to choose between the three-year and four-year options when applying to the universityApplication;
+            all students apply for the four-year universityApplication, and then decide at the start of the third year whether they wish to continue to the fourth year (which is subject to achieving a 2:1 at the end of the third year).</p>
+
+        <p>The universityApplication concentrates on creating links between theory and practice.
+            It covers a wide variety of software and hardware technologies and their cours.
+            We are looking for students with a real flair for mathematics, which you will develop into skills that can be used both for reasoning rigorously about the behaviour of programs and computer systems,
+            and for course such as scientific computing. You will also gain practical problem-solving and program design skills; the majority of subjects within the universityApplication are linked with practical work in our well-equipped laboratory.</p>
+
+
+
+        <p>Entrance requirements</p>
+    <ul>
+
+        <li>A*AA</li>
+        <li>with the A* in Maths, Further Maths or Computing/Computer Science</li>
+
+    </ul>
+
+        <p>Careers</p>
+        <p>Common roles for graduates include computer programmer, software designer and engineer, financial analyst and scientific researcher.
+            Graduates in Computer Science were the top earners in the 2017 Sunday Times league table of graduate salaries.
+            Six months after graduation our students had achieved a median salary of £45,000, higher than graduates of all other UK undergraduate degree courses.</p>
+
+    </article>
+
+    <section class="images">
+        <img src="../static/images/courses/compstudents.jpg" th:src="@{/images/courses/compstudents.jpg}" alt="Computer Science 1"/>
+
+    </section>
+
+    <section class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/JG-mHQX8eZw" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+    </section>
+
+    <footer>
+        &copy; G. Laaz 2019
+    </footer>
+</main>
+</body>
+</html>

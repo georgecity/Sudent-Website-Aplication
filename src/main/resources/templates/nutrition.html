@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}"/>
+    <script src="../static/js/main.js" th:src="@{/js/main.js}"></script>
+    <title>Nutrition</title>
+</head>
+<body>
+
+<main>
+    <header>
+        <img src="../static/images/city.jpg" th:src="@{/images/city.jpg}" alt="student banner"/>
+        <h2>Nutrition</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" th:href="@{/}">About Us</a></li>
+            <div class="dropdown">
+                <li>
+                    <a onclick="show_menu('Courses')" class="dropdownlink">Available Courses</a>
+                </li>
+                <div id="Courses" class="menuitems">
+                    <li><a href="maths.html" th:href="@{/maths}">Mathematics</a></li>
+                    <li><a href="physics.html" th:href="@{/physics}">Physics</a> </li>
+                    <li><a href="mechaelectrical.html" th:href="@{/mechaelectrical}">Mechanical and electrical Engineering</a> </li>
+                    <li><a href="medicine.html" th:href="@{/medicine}">Medicine</a> </li>
+                    <li><a href="mechanical.html" th:href="@{/mechanical}">Mechanical</a> </li>
+                    <li><a href="chemistry.html" th:href="@{/chemistry}">Chemistry</a></li>
+                    <li><a href="compscience.html" th:href="@{/compscience}">Computer Science</a> </li>
+                    <li><a href="law.html" th:href="@{/law}">Law</a> </li>
+                    <li><a href="economics.html" th:href="@{/economics}">Economics and Management</a> </li>
+                    <li><a href="biology.html" th:href="@{/biology}">Biology</a> </li>
+                    <li><a href="neuroscience.html" th:href="@{/neuroscience}">Neuroscience</a></li>
+                    <li><a href="politics.html" th:href="@{/politics}">Politics</a> </li>
+                    <li><a href="biomedical.html" th:href="@{/biomedical}">Biomedical Science</a> </li>
+                    <li><a href="nutrition.html" th:href="@{/nutrition}">Nutrition</a> </li>
+                    <li><a href="moleculargen.html" th:href="@{/moleculargen}">Molecular Genetics</a> </li>
+
+                </div>
+            </div>
+            <div class="dropdown">
+                <li>
+                    <a onclick="show_menu('Universities')" class="dropdownlink">Universities</a>
+                </li>
+                <div id="Universities" class="menuitems">
+                    <li><a href="aberdeen.html" th:href="@{/aberdeen}">Aberdeen University</a> </li>
+                    <li><a href="kings.html" th:href="@{/kings}">King's College</a> </li>
+                    <li><a href="oxford.html" th:href="@{/oxford}">Oxford University</a> </li>
+
+
+                </div>
+            </div>
+
+            <li><a href="register.html" th:href="@{/register}">Register</a></li>
+            <li><a href="apply.html" th:href="@{/apply}">Apply</a></li>
+            <li><a href="profile.html" th:href="@{/profile}">My Student Profile</a></li>
+        </ul>
+
+    </nav>
+    <article>
+        <p>Overview</p>
+        <p>The Nutrition BSc degree is a research-led universityApplication that provides students with an in-depth knowledge of all key aspects of nutrition and fosters an understanding of the influence of food intake on human health.
+            This universityApplication will also equip students with fundamental skills in critical analysis, information technology and communication.</p>
+
+
+
+        <p>Entry requirements</p>
+    <ul>
+
+        <li>A-level</li>
+        <li>ABB</li>
+        <li>Including Chemistry and Biology.</li>
+        <li>Please note that A-level General Studies, Critical Thinking, Thinking Skills and Global Perspectives are not accepted by King's as one of your A-levels.
+            However, if offered the grade achieved may be taken into account when considering whether or not to accept a candidate who has just fallen short of the conditions of their offer.</li>
+
+    </ul>
+
+        <p>Career prospects</p>
+        <p>Graduates may also continue to study, as the Nutrition BSc is good preparation for postgraduate education in molecular sciences like nutrigenomics and nutritional immunology;
+            clinical sciences like dietetics; and public health, for instance international health and development.</p>
+
+        <p>In the final year, Nutrition Profession Study Days are held, whereby you will receive specific career advice and guidance for the nutrition profession from academic tutors,
+            universities Careers Services and from external professionals working in a variety of disciplines in nutrition.</p>
+
+    </article>
+
+    <section class="images">
+        <img src="../static/images/courses/medstudents.jpg" th:src="@{/images/courses/medstudents.jpg}" alt="Nutrition 1"/>
+
+    </section>
+
+    <section class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/cIWBWLTKlF8" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+    </section>
+
+    <footer>
+        &copy; G. Laaz 2019
+    </footer>
+</main>
+</body>
+</html>

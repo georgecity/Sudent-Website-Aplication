@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}"/>
+    <script src="../static/js/main.js" th:src="@{/js/main.js}"></script>
+    <title>Chemistry</title>
+</head>
+<body>
+
+<main>
+    <header>
+        <img src="../static/images/city.jpg" th:src="@{/images/city.jpg}" alt="student banner"/>
+        <h2>Chemistry</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" th:href="@{/}">About Us</a></li>
+            <div class="dropdown">
+                <li>
+                    <a onclick="show_menu('Courses')" class="dropdownlink">Available Courses</a>
+                </li>
+                <div id="Courses" class="menuitems">
+                    <li><a href="maths.html" th:href="@{/maths}">Mathematics</a></li>
+                    <li><a href="physics.html" th:href="@{/physics}">Physics</a> </li>
+                    <li><a href="mechaelectrical.html" th:href="@{/mechaelectrical}">Mechanical and electrical Engineering</a> </li>
+                    <li><a href="medicine.html" th:href="@{/medicine}">Medicine</a> </li>
+                    <li><a href="mechanical.html" th:href="@{/mechanical}">Mechanical</a> </li>
+                    <li><a href="chemistry.html" th:href="@{/chemistry}">Chemistry</a></li>
+                    <li><a href="compscience.html" th:href="@{/compscience}">Computer Science</a> </li>
+                    <li><a href="law.html" th:href="@{/law}">Law</a> </li>
+                    <li><a href="economics.html" th:href="@{/economics}">Economics and Management</a> </li>
+                    <li><a href="biology.html" th:href="@{/biology}">Biology</a> </li>
+                    <li><a href="neuroscience.html" th:href="@{/neuroscience}">Neuroscience</a></li>
+                    <li><a href="politics.html" th:href="@{/politics}">Politics</a> </li>
+                    <li><a href="biomedical.html" th:href="@{/biomedical}">Biomedical Science</a> </li>
+                    <li><a href="nutrition.html" th:href="@{/nutrition}">Nutrition</a> </li>
+                    <li><a href="moleculargen.html" th:href="@{/moleculargen}">Molecular Genetics</a> </li>
+
+                </div>
+            </div>
+            <div class="dropdown">
+                <li>
+                    <a onclick="show_menu('Universities')" class="dropdownlink">Universities</a>
+                </li>
+                <div id="Universities" class="menuitems">
+                    <li><a href="aberdeen.html" th:href="@{/aberdeen}">Aberdeen University</a> </li>
+                    <li><a href="kings.html" th:href="@{/kings}">King's College</a> </li>
+                    <li><a href="oxford.html" th:href="@{/oxford}">Oxford University</a> </li>
+
+
+                </div>
+            </div>
+
+            <li><a href="register.html" th:href="@{/register}">Register</a></li>
+            <li><a href="apply.html" th:href="@{/apply}">Apply</a></li>
+            <li><a href="profile.html" th:href="@{/profile}">My Student Profile</a></li>
+        </ul>
+
+    </nav>
+    <article>
+        <p>Chemistry is a wide-ranging science concerned with matter at the atomic and molecular scale.
+            Important aspects are synthesis, structure, reaction mechanisms, properties, analysis and transformations of all types of materials.</p>
+
+        <p>Chemists are a constant source of innovation: it is hard to imagine any product introduced in recent times that did not require the creative efforts of a chemist.
+            Chemistry underpins the conceptual framework and methodology of biochemistry and molecular medicine and is at the heart of many major industries.</p>
+
+        <p>Teaching and research are closely linked on the universityApplication:
+            UK has one of the leading chemistry departments in the world with state-of-the-art teaching and research laboratories and world-class research in a broad range of areas including:
+            synthesis and catalysis; medicinal and biological chemistry;
+            sustainable energy; advanced materials; innovative measurement;
+            and theoretical and computational chemistry. Students starting in 2020 will be taught an exciting new practical universityApplication in our recently-built lab.
+            The department has an outstanding track record in commercialising the innovative work of research staff, which has raised millions of pounds for the University.</p>
+
+        <p>The MChem is a four-year universityApplication and is not modular, in the sense that the subject is taught and examined as a whole,
+            enabling us to explore the links within the subject. The core material is taken by all students, with opportunities to specialise later in the universityApplication.
+            The fourth year (Part II) is devoted exclusively to research – a distinctive feature of Chemistry.</p>
+
+
+
+        <p>Entrance requirements</p>
+    <ul>
+        //list here
+
+        <li>A*A*A </li>
+        <li>(with both A*s in science subjects and/or Maths) </li>
+
+    </ul>
+
+        <p>Work placements/international opportunities
+        <p>The fourth year (Part II) of the universityApplication involves full-time work within an established research group,
+        which offers the possibility for a few students to spend time at laboratories in industry or at universities abroad.
+        Many students find work placements during vacations through the Careers Service and there are some opportunities within the department.</p>
+
+    </article>
+
+    <section class="images">
+        <img src="../static/images/courses/sciencestudents.jpg" th:src="@{/images/courses/sciencestudents.jpg}" alt="Chemistry 1"/>
+
+    </section>
+
+    <section class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/zoukpvmcU6E" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+    </section>
+
+    <footer>
+        &copy; G. Laaz 2019
+    </footer>
+</main>
+</body>
+</html>

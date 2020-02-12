@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}"/>
+    <script src="../static/js/main.js" th:src="@{/js/main.js}"></script>
+    <title>Mechanical and Electrical Engineering</title>
+</head>
+<body>
+
+<main>
+    <header>
+        <img src="../static/images/city.jpg" th:src="@{/images/city.jpg}" alt="student banner"/>
+        <h2>Mechanical and Electrical Engineering</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" th:href="@{/}">About Us</a></li>
+            <div class="dropdown">
+                <li>
+                    <a onclick="show_menu('Courses')" class="dropdownlink">Available Courses</a>
+                </li>
+                <div id="Courses" class="menuitems">
+                    <li><a href="maths.html" th:href="@{/maths}">Mathematics</a></li>
+                    <li><a href="physics.html" th:href="@{/physics}">Physics</a> </li>
+                    <li><a href="mechaelectrical.html" th:href="@{/mechaelectrical}">Mechanical and electrical Engineering</a> </li>
+                    <li><a href="medicine.html" th:href="@{/medicine}">Medicine</a> </li>
+                    <li><a href="mechanical.html" th:href="@{/mechanical}">Mechanical</a> </li>
+                    <li><a href="chemistry.html" th:href="@{/chemistry}">Chemistry</a></li>
+                    <li><a href="compscience.html" th:href="@{/compscience}">Computer Science</a> </li>
+                    <li><a href="law.html" th:href="@{/law}">Law</a> </li>
+                    <li><a href="economics.html" th:href="@{/economics}">Economics and Management</a> </li>
+                    <li><a href="biology.html" th:href="@{/biology}">Biology</a> </li>
+                    <li><a href="neuroscience.html" th:href="@{/neuroscience}">Neuroscience</a></li>
+                    <li><a href="politics.html" th:href="@{/politics}">Politics</a> </li>
+                    <li><a href="biomedical.html" th:href="@{/biomedical}">Biomedical Science</a> </li>
+                    <li><a href="nutrition.html" th:href="@{/nutrition}">Nutrition</a> </li>
+                    <li><a href="moleculargen.html" th:href="@{/moleculargen}">Molecular Genetics</a> </li>
+
+                </div>
+            </div>
+            <div class="dropdown">
+                <li>
+                    <a onclick="show_menu('Universities')" class="dropdownlink">Universities</a>
+                </li>
+                <div id="Universities" class="menuitems">
+                    <li><a href="aberdeen.html" th:href="@{/aberdeen}">Aberdeen University</a> </li>
+                    <li><a href="kings.html" th:href="@{/kings}">King's College</a> </li>
+                    <li><a href="oxford.html" th:href="@{/oxford}">Oxford University</a> </li>
+
+
+                </div>
+            </div>
+
+            <li><a href="register.html" th:href="@{/register}">Register</a></li>
+            <li><a href="apply.html" th:href="@{/apply}">Apply</a></li>
+            <li><a href="profile.html" th:href="@{/profile}">My Student Profile</a></li>
+        </ul>
+
+    </nav>
+    <article>
+        <p>Joint degree combining Mechanical and Electrical Engineering.</p>
+
+        <p>Mechanical engineering is concerned with creative and imaginative use of engineering principles and science to shape the world around us,
+            through the development of new materials, technologies, processes and products.
+            Mechanical engineers design and develop everything that moves or has moving parts, ranging from spacecrafts and aeroplanes to racing cars,
+            from household goods like refrigerators to the small motors that turn a CD in a CD player, from robotic control of machinery to nanotechnologies,
+            from mechanical hearts and artificial limbs to fitness machines, and from oil and gas exploration and production technologies to wind turbines.</p>
+
+        <p>Our society relies on Electrical Engineers for everything from low power electrical machines, control systems, to high voltage electrical power generation and distribution systems.
+            Electrical and Electronic Engineering is at the core of the modern world, from computers, to digital circuits, photonics and a wealth of electronic devices.
+            Electrical and Electronic engineering is one of the most satisfying subjects that you can study.</p>
+
+
+
+
+    <p>Qualifications</p>
+    <p>General Entry Requirements</p>
+
+    <ul>
+
+        <li>SQA Highers</li>
+        <li>Standard: AABB (Mathematics and Physics or Engineering Science required*)</li>
+
+
+        <li>A LEVELS</li>
+        <li>Standard: ABB </li></li>
+        <li>(AB required in Mathematics, plus at least one from Physics, Design & Technology, Engineering or Chemistry).</li>
+
+    </ul>
+
+        <p>Careers</p>
+        <p>A Mechanical Engineering degree opens doors to a wide range of exciting careers in most industry areas.
+            You can work in rail, aircraft, pharmaceuticals, process industries, electronics, defence, FMCG, construction and chemicals and more.</p>
+
+    </article>
+
+    <section class="images">
+        <img src="../static/images/courses/studentscomp.jpg" th:src="@{/images/courses/studentscomp.jpg}" alt="Engineering 1"/>
+
+    </section>
+
+    <section class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/nLCsFyuCrNs" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+    </section>
+
+    <footer>
+        &copy; G. Laaz 2019
+    </footer>
+</main>
+</body>
+</html>

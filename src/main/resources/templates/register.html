@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}"/>
+    <script src="../static/js/main.js" th:src="@{/js/main.js}"></script>
+    <title>Registration</title>
+</head>
+<body>
+
+<main>
+    <header>
+        <img src="../static/images/city.jpg" th:src="@{/images/city.jpg}" alt="student banner"/>
+        <h2>Registration</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" th:href="@{/}">About Us</a></li>
+            <div class="dropdown">
+                <li>
+                    <a onclick="show_menu('Courses')" class="dropdownlink">Available Courses</a>
+                </li>
+                <div id="Courses" class="menuitems">
+                    <li><a href="maths.html" th:href="@{/maths}">Mathematics</a></li>
+                    <li><a href="physics.html" th:href="@{/physics}">Physics</a> </li>
+                    <li><a href="mechaelectrical.html" th:href="@{/mechaelectrical}">Mechanical and electrical Engineering</a> </li>
+                    <li><a href="medicine.html" th:href="@{/medicine}">Medicine</a> </li>
+                    <li><a href="mechanical.html" th:href="@{/mechanical}">Mechanical</a> </li>
+                    <li><a href="chemistry.html" th:href="@{/chemistry}">Chemistry</a></li>
+                    <li><a href="compscience.html" th:href="@{/compscience}">Computer Science</a> </li>
+                    <li><a href="law.html" th:href="@{/law}">Law</a> </li>
+                    <li><a href="economics.html" th:href="@{/economics}">Economics and Management</a> </li>
+                    <li><a href="biology.html" th:href="@{/biology}">Biology</a> </li>
+                    <li><a href="neuroscience.html" th:href="@{/neuroscience}">Neuroscience</a></li>
+                    <li><a href="politics.html" th:href="@{/politics}">Politics</a> </li>
+                    <li><a href="biomedical.html" th:href="@{/biomedical}">Biomedical Science</a> </li>
+                    <li><a href="nutrition.html" th:href="@{/nutrition}">Nutrition</a> </li>
+                    <li><a href="moleculargen.html" th:href="@{/moleculargen}">Molecular Genetics</a> </li>
+
+                </div>
+            </div>
+            <div class="dropdown">
+                <li>
+                    <a onclick="show_menu('Universities')" class="dropdownlink">Universities</a>
+                </li>
+                <div id="Universities" class="menuitems">
+                    <li><a href="aberdeen.html" th:href="@{/aberdeen}">Aberdeen University</a> </li>
+                    <li><a href="kings.html" th:href="@{/kings}">King's College</a> </li>
+                    <li><a href="oxford.html" th:href="@{/oxford}">Oxford University</a> </li>
+
+
+                </div>
+            </div>
+
+            <li><a href="register.html" th:href="@{/register}">Register</a></li>
+            <li><a href="apply.html" th:href="@{/apply}">Apply</a></li>
+            <li><a href="profile.html" th:href="@{/profile}">My Student Profile</a></li>
+        </ul>
+
+    </nav>
+    <article>
+
+
+        <form th:action="@{register}" method="post" th:object="${studentUser}">
+
+            <fieldset>
+                <legend>Student Information</legend>
+                <table>
+                    <tr>
+                        <td><label for="title" >Title:</label></td>
+                        <td>
+                            <select id="title" th:field="*{title}" onclick="moveByX(16.67)" >
+                                <option value="Mr">Mr </option>
+                                <option value="Mrs">Mrs</option>
+                                <option value="Miss">Miss</option>
+                                <option value="Ms">Ms</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="fname">First Name</label>
+                        <td><input type="text" id="fname" pattern="[A-Za-z]*"
+                                   title="Your name must contain only letters."
+                                   onclick="moveByX(16.67)"
+                                   th:field="*{firstName}"/></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="lname">Last Name</label></td>
+                        <td><input type="text" id="lname" pattern="[A-Za-z]*"
+                                   title="Your name must contain only letters."
+                                   onclick="moveByX(16.67)"
+                                   th:field="*{lastName}"/></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email</label></td>
+                        <td><input type="email" id="email"
+                                   onclick="moveByX(16.67)"
+                                   th:field="*{email}"/></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pword">Password</label></td>
+                        <td><input type="password" id="pword" minlength="6" th:field="*{password}"
+                                   onclick="moveByX(16.67)"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="Register"/></td>
+                    </tr>
+                    <tr>
+                        <div id="barHolder">
+                            <div id="bar"></div>
+                        </div>
+                    </tr>
+
+
+                </table>
+            </fieldset>
+        </form>
+    </article>
+    <footer>
+        &copy; G. Laaz 2019
+    </footer>
+</main>
+</body>
+</html>

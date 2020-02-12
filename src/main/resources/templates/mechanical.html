@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}"/>
+    <script src="../static/js/main.js" th:src="@{/js/main.js}"></script>
+    <title>Mechanical Engineering</title>
+</head>
+<body>
+
+<main>
+    <header>
+        <img src="../static/images/city.jpg" th:src="@{/images/city.jpg}" alt="student banner"/>
+        <h2>Mechanical Engineering</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" th:href="@{/}">About Us</a></li>
+            <div class="dropdown">
+                <li>
+                    <a onclick="show_menu('Courses')" class="dropdownlink">Available Courses</a>
+                </li>
+                <div id="Courses" class="menuitems">
+                    <li><a href="maths.html" th:href="@{/maths}">Mathematics</a></li>
+                    <li><a href="physics.html" th:href="@{/physics}">Physics</a> </li>
+                    <li><a href="mechaelectrical.html" th:href="@{/mechaelectrical}">Mechanical and electrical Engineering</a> </li>
+                    <li><a href="medicine.html" th:href="@{/medicine}">Medicine</a> </li>
+                    <li><a href="mechanical.html" th:href="@{/mechanical}">Mechanical</a> </li>
+                    <li><a href="chemistry.html" th:href="@{/chemistry}">Chemistry</a></li>
+                    <li><a href="compscience.html" th:href="@{/compscience}">Computer Science</a> </li>
+                    <li><a href="law.html" th:href="@{/law}">Law</a> </li>
+                    <li><a href="economics.html" th:href="@{/economics}">Economics and Management</a> </li>
+                    <li><a href="biology.html" th:href="@{/biology}">Biology</a> </li>
+                    <li><a href="neuroscience.html" th:href="@{/neuroscience}">Neuroscience</a></li>
+                    <li><a href="politics.html" th:href="@{/politics}">Politics</a> </li>
+                    <li><a href="biomedical.html" th:href="@{/biomedical}">Biomedical Science</a> </li>
+                    <li><a href="nutrition.html" th:href="@{/nutrition}">Nutrition</a> </li>
+                    <li><a href="moleculargen.html" th:href="@{/moleculargen}">Molecular Genetics</a> </li>
+
+                </div>
+            </div>
+            <div class="dropdown">
+                <li>
+                    <a onclick="show_menu('Universities')" class="dropdownlink">Universities</a>
+                </li>
+                <div id="Universities" class="menuitems">
+                    <li><a href="aberdeen.html" th:href="@{/aberdeen}">Aberdeen University</a> </li>
+                    <li><a href="kings.html" th:href="@{/kings}">King's College</a> </li>
+                    <li><a href="oxford.html" th:href="@{/oxford}">Oxford University</a> </li>
+
+
+                </div>
+            </div>
+
+            <li><a href="register.html" th:href="@{/register}">Register</a></li>
+            <li><a href="apply.html" th:href="@{/apply}">Apply</a></li>
+            <li><a href="profile.html" th:href="@{/profile}">My Student Profile</a></li>
+        </ul>
+
+    </nav>
+    <article>
+        <p>Virtually every product in modern life has probably been touched in some way by a mechanical engineer.</p>
+
+        <p>If you are interested in the mechanics and dynamics of movement, have aptitude and fascination in how things work,
+            and want to contribute positively to making the life of the human race better and to the development of a sustainable environment,
+            then you should consider mechanical engineering as a career choice.</p>
+
+
+        <p>Mechanical engineering is concerned with creative and imaginative use of principles and science to shape the world around us,
+            through the development of new materials, technologies, processes and products.</p>
+
+        <p>Mechanical Engineers design and develop everything that moves or has moving parts, ranging from spacecrafts and aeroplanes to racing cars,
+            from household goods like refrigerators to the small motors that turn a DVD in a DVD player, from robotic control of machinery to nanotechnologies,
+            from mechanical hearts and artificial limbs to fitness machines, and from oil and gas exploration and production technologies to wind turbines.</p>
+
+
+
+
+        <p>Qualifications</p>
+        <p>General Entry Requirements</p>
+
+
+    <ul>
+
+        <li> SQA Highers </li>
+        <li>Standard: AABB (Mathematics and Physics or Engineering Science required*) </li>
+
+        <li>A LEVELS </li>
+        <li>Standard: ABB  </li>
+        <li>(AB required in Mathematics, plus at least one from Physics, Design & Technology, Engineering or Chemistry).
+            Applicants who are predicted to achieve the Standard entry requirements are encouraged to apply and may be made a conditional offer of admission. </li>
+
+    </ul>
+
+        <p>Carrers</P>
+        <p>Engineering is one of the most satisfying professions. You get results. You make things happen. You generate new,
+            logical solutions to other people’s problems and at the end of the day, you have the job satisfaction of being able to see your work in action.</p>
+
+        <p>Engineering is an intellectually demanding profession, mainly because of the wide range of skills you need to deploy.
+            You are expected to be good at mathematics, to have a sound grasp of basic sciences, to be inventive and creative,
+            to be able to sell your ideas to clients and colleagues and, in due universityApplication, to organise and lead fellow professionals.</p>
+
+    </article>
+
+    <section class="images">
+        <img src="../static/images/courses/studentscomp.jpg" th:src="@{/images/courses/studentscomp.jpg}" alt="Mechanical Engineering 1"/>
+
+    </section>
+
+    <section class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/nLCsFyuCrNs" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+    </section>
+
+    <footer>
+        &copy; G. Laaz 2019
+    </footer>
+</main>
+</body>
+</html>

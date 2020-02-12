@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}"/>
+    <script src="../static/js/main.js" th:src="@{/js/main.js}"></script>
+    <title>Medicine</title>
+</head>
+<body>
+
+<main>
+    <header>
+        <img src="../static/images/city.jpg" th:src="@{/images/city.jpg}" alt="student banner"/>
+        <h2>Medicine</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" th:href="@{/}">About Us</a></li>
+            <div class="dropdown">
+                <li>
+                    <a onclick="show_menu('Courses')" class="dropdownlink">Available Courses</a>
+                </li>
+                <div id="Courses" class="menuitems">
+                    <li><a href="maths.html" th:href="@{/maths}">Mathematics</a></li>
+                    <li><a href="physics.html" th:href="@{/physics}">Physics</a> </li>
+                    <li><a href="mechaelectrical.html" th:href="@{/mechaelectrical}">Mechanical and electrical Engineering</a> </li>
+                    <li><a href="medicine.html" th:href="@{/medicine}">Medicine</a> </li>
+                    <li><a href="mechanical.html" th:href="@{/mechanical}">Mechanical</a> </li>
+                    <li><a href="chemistry.html" th:href="@{/chemistry}">Chemistry</a></li>
+                    <li><a href="compscience.html" th:href="@{/compscience}">Computer Science</a> </li>
+                    <li><a href="law.html" th:href="@{/law}">Law</a> </li>
+                    <li><a href="economics.html" th:href="@{/economics}">Economics and Management</a> </li>
+                    <li><a href="biology.html" th:href="@{/biology}">Biology</a> </li>
+                    <li><a href="neuroscience.html" th:href="@{/neuroscience}">Neuroscience</a></li>
+                    <li><a href="politics.html" th:href="@{/politics}">Politics</a> </li>
+                    <li><a href="biomedical.html" th:href="@{/biomedical}">Biomedical Science</a> </li>
+                    <li><a href="nutrition.html" th:href="@{/nutrition}">Nutrition</a> </li>
+                    <li><a href="moleculargen.html" th:href="@{/moleculargen}">Molecular Genetics</a> </li>
+
+                </div>
+            </div>
+            <div class="dropdown">
+                <li>
+                    <a onclick="show_menu('Universities')" class="dropdownlink">Universities</a>
+                </li>
+                <div id="Universities" class="menuitems">
+                    <li><a href="aberdeen.html" th:href="@{/aberdeen}">Aberdeen University</a> </li>
+                    <li><a href="kings.html" th:href="@{/kings}">King's College</a> </li>
+                    <li><a href="oxford.html" th:href="@{/oxford}">Oxford University</a> </li>
+
+
+                </div>
+            </div>
+
+            <li><a href="register.html" th:href="@{/register}">Register</a></li>
+            <li><a href="apply.html" th:href="@{/apply}">Apply</a></li>
+            <li><a href="profile.html" th:href="@{/profile}">My Student Profile</a></li>
+        </ul>
+
+    </nav>
+    <article>
+        <p>At University, you will study medicine in a thriving medical school that is co-located on one of the largest clinical sites in Europe with superb teaching and extensive research facilities.</p>
+
+
+        <p>Our modern, dynamic and clearly delivered MBChB uses a systems-based, integrated approach.
+            Our curriculum is constantly reviewed and updated in response to changing GMC guidance, scientific and medical advances, changes in healthcare delivery and changes in educational theory and practice.
+            Student feedback is highly encouraged.</p>
+
+        <p>Based on one of the largest health campuses in Europe, on site facilities include a large teaching hospital, paediatric and maternity hospitals
+            which means that you will have access to and be taught by experienced clinicians who are at the forefront of modern clinical practice.</p>
+
+        <p>With an impressive history of medical discovery and innovation,
+            UK is the first choice for aspiring medical students looking to embark on a career that will make a real difference not just to the care of individuals but to society as a whole.</p>
+
+
+
+        <p>Entry Requirements</p>
+
+
+    <ul>
+        <li>Medicine is a vocational universityApplication, one in which the student is trained to become a medical professional.
+            The range of specialty options after qualification is very wide, but nevertheless, making such a career choice, particularly at a young age is a daunting task for many applicants.</li>
+
+        <li>It is important to understand that there are Academic Requirements (i.e. the minimum achievements required in examinations) as well as Non-Academic Requirements for Medicine.
+            In addition, all applicants must take the University Clinical Aptitude Test (UCAT).</li>
+
+    </ul>
+
+        <p>Careers</p>
+        <p>Planning your Medical Career</p>
+
+        <p>The NHS National Health Careers website www.healthcareers.nhs.uk contains lots of valuable information to assist you in planning your medical career.</p>
+
+        <p>Academic Medicine</p>
+
+        <p>A proportion of graduates with an aptitude for research and teaching follow a career in academic medicine.
+            They will almost invariably proceed on to a degree by thesis e.g. MD, ChM or PhD.
+            Individuals who wish to pursue a Consultant appointment in a teaching hospital may also find this form of higher degree invaluable.
+            Potential academics of the future are mentored and encouraged to apply for the Academic Foundation Programme.</p>
+
+    </article>
+
+    <section class="images">
+        <img src="../static/images/courses/medstudents.jpg" th:src="@{/images/courses/medstudents.jpg}" alt="Medicine 1"/>
+    </section>
+
+    <section class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/P6kxTbL8pr4" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+    </section>
+
+    <footer>
+        &copy; G. Laaz 2019
+    </footer>
+</main>
+</body>
+</html>

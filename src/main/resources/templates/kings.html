@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}"/>
+    <script src="../static/js/main.js" th:src="@{/js/main.js}"></script>
+    <title>Kings College</title>
+</head>
+<body>
+
+<main>
+    <header>
+        <img src="../static/images/city.jpg" th:src="@{/images/city.jpg}" alt="student banner"/>
+        <h2>Kings's College</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" th:href="@{/}">About Us</a></li>
+            <div class="dropdown">
+                <li>
+                    <a onclick="show_menu('Courses')" class="dropdownlink">Available Courses</a>
+                </li>
+                <div id="Courses" class="menuitems">
+                    <li><a href="maths.html" th:href="@{/maths}">Mathematics</a></li>
+                    <li><a href="physics.html" th:href="@{/physics}">Physics</a> </li>
+                    <li><a href="mechaelectrical.html" th:href="@{/mechaelectrical}">Mechanical and electrical Engineering</a> </li>
+                    <li><a href="medicine.html" th:href="@{/medicine}">Medicine</a> </li>
+                    <li><a href="mechanical.html" th:href="@{/mechanical}">Mechanical</a> </li>
+                    <li><a href="chemistry.html" th:href="@{/chemistry}">Chemistry</a></li>
+                    <li><a href="compscience.html" th:href="@{/compscience}">Computer Science</a> </li>
+                    <li><a href="law.html" th:href="@{/law}">Law</a> </li>
+                    <li><a href="economics.html" th:href="@{/economics}">Economics and Management</a> </li>
+                    <li><a href="biology.html" th:href="@{/biology}">Biology</a> </li>
+                    <li><a href="neuroscience.html" th:href="@{/neuroscience}">Neuroscience</a></li>
+                    <li><a href="politics.html" th:href="@{/politics}">Politics</a> </li>
+                    <li><a href="biomedical.html" th:href="@{/biomedical}">Biomedical Science</a> </li>
+                    <li><a href="nutrition.html" th:href="@{/nutrition}">Nutrition</a> </li>
+                    <li><a href="moleculargen.html" th:href="@{/moleculargen}">Molecular Genetics</a> </li>
+
+                </div>
+            </div>
+            <div class="dropdown">
+                <li>
+                    <a onclick="show_menu('Universities')" class="dropdownlink">Universities</a>
+                </li>
+                <div id="Universities" class="menuitems">
+                    <li><a href="aberdeen.html" th:href="@{/aberdeen}">Aberdeen University</a> </li>
+                    <li><a href="kings.html" th:href="@{/kings}">King's College</a> </li>
+                    <li><a href="oxford.html" th:href="@{/oxford}">Oxford University</a> </li>
+
+
+                </div>
+            </div>
+
+            <li><a href="register.html" th:href="@{/register}">Register</a></li>
+            <li><a href="apply.html" th:href="@{/apply}">Apply</a></li>
+            <li><a href="profile.html" th:href="@{/profile}">My Student Profile</a></li>
+        </ul>
+
+    </nav>
+    <article>
+        <p>Our vision</p>
+
+        <p>Since our foundation in 1829, our students and staff have dedicated themselves in the service of society. </p>
+
+        <p>Our Strategic Vision, launched in January 2017 takes us to our 200th anniversary in 2029 and builds upon our history of making a full contribution to society.</p>
+
+        <p>We will continue to focus on world-leading education, research and service and will have an increasingly proactive role to play in a more interconnected, complex world.</p>
+
+        <p>We will continue to expand the huge contribution King’s makes to London and through that a national contribution within the UK, and beyond that to an international community that serves the world.</p>
+
+
+
+        <p>Admissions</p>
+        <ul>
+
+            <li>The undergraduate admissions process is co-ordinated by the University, but colleges are ultimately responsible for selecting and admitting their undergraduate students.
+                The University admits graduate students, but once they have been offered a place by the University, graduate students are also selected by a college.</li>
+
+        </ul>
+
+        <p>Teaching</p>
+
+        <p>Research is core to King’s, what we do, what we care about and how we educate. It is how we channel our creativity to further knowledge and understanding, challenge convention and deliver impact.</p>
+
+        <p>Our vision is to deliver research to inform and innovate. By providing the best environment, support and networks for our community, from postgraduate research students to senior academics, we will deliver research excellence.</p>
+
+    </article>
+
+    <section class="images">
+        <img src="../static/images/kings/kingsbanner.jpg" th:src="@{/images/kings/kingsbanner.jpg}" alt="Kings 1"/>
+        <img src="../static/images/kings/kcllogo.gif" th:src="@{/images/kings/kcllogo.gif}" alt="Logo 2"/>
+    </section>
+
+    <section class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/7pmQ7xWkGcs" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+    </section>
+
+    <footer>
+        &copy; G. Laaz 2019
+    </footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}"/>
+    <script src="../static/js/main.js" th:src="@{/js/main.js}"></script>
+    <title>Politics</title>
+</head>
+<body>
+
+<main>
+    <header>
+        <img src="../static/images/city.jpg" th:src="@{/images/city.jpg}" alt="students banner"/>
+        <h2>Politics</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" th:href="@{/}">About Us</a></li>
+            <div class="dropdown">
+                <li>
+                    <a onclick="show_menu('Courses')" class="dropdownlink">Available Courses</a>
+                </li>
+                <div id="Courses" class="menuitems">
+                    <li><a href="maths.html" th:href="@{/maths}">Mathematics</a></li>
+                    <li><a href="physics.html" th:href="@{/physics}">Physics</a> </li>
+                    <li><a href="mechaelectrical.html" th:href="@{/mechaelectrical}">Mechanical and electrical Engineering</a> </li>
+                    <li><a href="medicine.html" th:href="@{/medicine}">Medicine</a> </li>
+                    <li><a href="mechanical.html" th:href="@{/mechanical}">Mechanical</a> </li>
+                    <li><a href="chemistry.html" th:href="@{/chemistry}">Chemistry</a></li>
+                    <li><a href="compscience.html" th:href="@{/compscience}">Computer Science</a> </li>
+                    <li><a href="law.html" th:href="@{/law}">Law</a> </li>
+                    <li><a href="economics.html" th:href="@{/economics}">Economics and Management</a> </li>
+                    <li><a href="biology.html" th:href="@{/biology}">Biology</a> </li>
+                    <li><a href="neuroscience.html" th:href="@{/neuroscience}">Neuroscience</a></li>
+                    <li><a href="politics.html" th:href="@{/politics}">Politics</a> </li>
+                    <li><a href="biomedical.html" th:href="@{/biomedical}">Biomedical Science</a> </li>
+                    <li><a href="nutrition.html" th:href="@{/nutrition}">Nutrition</a> </li>
+                    <li><a href="moleculargen.html" th:href="@{/moleculargen}">Molecular Genetics</a> </li>
+
+                </div>
+            </div>
+            <div class="dropdown">
+                <li>
+                    <a onclick="show_menu('Universities')" class="dropdownlink">Universities</a>
+                </li>
+                <div id="Universities" class="menuitems">
+                    <li><a href="aberdeen.html" th:href="@{/aberdeen}">Aberdeen University</a> </li>
+                    <li><a href="kings.html" th:href="@{/kings}">King's College</a> </li>
+                    <li><a href="oxford.html" th:href="@{/oxford}">Oxford University</a> </li>
+
+
+                </div>
+            </div>
+
+            <li><a href="register.html" th:href="@{/register}">Register</a></li>
+            <li><a href="apply.html" th:href="@{/apply}">Apply</a></li>
+            <li><a href="profile.html" th:href="@{/profile}">My Student Profile</a></li>
+        </ul>
+
+    </nav>
+    <article>
+        <p>Overview</p>
+        <p>The interaction of people, ideas and institutions is central to shaping the outcomes of political processes and government decision-making at global, national, regional and local levels.
+            Our Politics BA/BSc will develop your knowledge and understanding of the relationship between government and society and explore questions of political order and decision making.</p>
+
+        <p>Sitting within the Faculty of Social Science & Public Policy, the Department of Political Economy has an interdisciplinary, social science ethos, fostering a stimulating intellectual environment that has attracted leading scholars.
+            Our research-led curriculum encourages critical analysis and debate on contemporary international political and policy issues.</p>
+
+
+
+        <p>Entry requirements</p>
+    <ul>
+
+        <li>A-level</li>
+        <li>A*AA</li>
+        <li>Please note that A-level General Studies, Critical Thinking, Thinking Skills and Global Perspectives are not accepted by King's as one of your A-levels.
+            However, if offered the grade achieved may be taken into account when considering whether or not to accept a candidate who has just fallen short of the conditions of their offer.</li>
+
+    </ul>
+
+        <p>Career prospects</p>
+        <p>Your Politics BA/BSc will equip you for a wide-range of career options in business, government and policy, the public sector, charity and social enterprise.
+            Through your universityApplication, you will acquire skills and knowledge that are recognised and valued by employers in policy development, governmental roles and communications, amongst many others.</p>
+
+    </article>
+
+    <section class="images">
+        <img src="../static/images/courses/studentscomp.jpg" th:src="@{/images/courses/studentscomp.jpg}" alt="Politics 1"/>
+    </section>
+
+    <section class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/yRiXj855DSc" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+    </section>
+
+    <footer>
+        &copy; G. Laaz 2019
+    </footer>
+</main>
+</body>
+</html>

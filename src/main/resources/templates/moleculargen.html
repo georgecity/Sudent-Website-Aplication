@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}"/>
+    <script src="../static/js/main.js" th:src="@{/js/main.js}"></script>
+    <title>Molecular Genetics</title>
+</head>
+<body>
+
+<main>
+    <header>
+        <img src="../static/images/city.jpg" th:src="@{/images/city.jpg}" alt="student banner"/>
+        <h2>Molecular Genetics</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" th:href="@{/}">About Us</a></li>
+            <div class="dropdown">
+                <li>
+                    <a onclick="show_menu('Courses')" class="dropdownlink">Available Courses</a>
+                </li>
+                <div id="Courses" class="menuitems">
+                    <li><a href="maths.html" th:href="@{/maths}">Mathematics</a></li>
+                    <li><a href="physics.html" th:href="@{/physics}">Physics</a> </li>
+                    <li><a href="mechaelectrical.html" th:href="@{/mechaelectrical}">Mechanical and electrical Engineering</a> </li>
+                    <li><a href="medicine.html" th:href="@{/medicine}">Medicine</a> </li>
+                    <li><a href="mechanical.html" th:href="@{/mechanical}">Mechanical</a> </li>
+                    <li><a href="chemistry.html" th:href="@{/chemistry}">Chemistry</a></li>
+                    <li><a href="compscience.html" th:href="@{/compscience}">Computer Science</a> </li>
+                    <li><a href="law.html" th:href="@{/law}">Law</a> </li>
+                    <li><a href="economics.html" th:href="@{/economics}">Economics and Management</a> </li>
+                    <li><a href="biology.html" th:href="@{/biology}">Biology</a> </li>
+                    <li><a href="neuroscience.html" th:href="@{/neuroscience}">Neuroscience</a></li>
+                    <li><a href="politics.html" th:href="@{/politics}">Politics</a> </li>
+                    <li><a href="biomedical.html" th:href="@{/biomedical}">Biomedical Science</a> </li>
+                    <li><a href="nutrition.html" th:href="@{/nutrition}">Nutrition</a> </li>
+                    <li><a href="moleculargen.html" th:href="@{/moleculargen}">Molecular Genetics</a> </li>
+
+                </div>
+            </div>
+            <div class="dropdown">
+                <li>
+                    <a onclick="show_menu('Universities')" class="dropdownlink">Universities</a>
+                </li>
+                <div id="Universities" class="menuitems">
+                    <li><a href="aberdeen.html" th:href="@{/aberdeen}">Aberdeen University</a> </li>
+                    <li><a href="kings.html" th:href="@{/kings}">King's College</a> </li>
+                    <li><a href="oxford.html" th:href="@{/oxford}">Oxford University</a> </li>
+
+
+                </div>
+            </div>
+
+            <li><a href="register.html" th:href="@{/register}">Register</a></li>
+            <li><a href="apply.html" th:href="@{/apply}">Apply</a></li>
+            <li><a href="profile.html" th:href="@{/profile}">My Student Profile</a></li>
+        </ul>
+
+    </nav>
+    <article>
+        <p>Overview</p>
+        <p>Our Molecular Genetics MSci universityApplication focuses on the new genetic technologies that advance our understanding of genetic mechanisms and gene expression in model organisms and humans.
+            The universityApplication will give you an in-depth understanding of genetics and the basis of human genetic disease and train you in laboratory techniques, experimental design, data analysis, research methods, research project design and presentation.
+            The universityApplication also features an option to study abroad.</p>
+
+        <p>Studying a Biomedical Science degree with us means that you will be able to enjoy the flexibility to choose your degree after your first year with our Common Year One curriculum.
+            All Biomedical Science disciplines are covered in the first year, making the decision for your future an informed one.</p>
+
+    <p>Entry requirements</p>
+
+    <ul>
+
+        <li>A-Level</li>
+        <li>AAA</li>
+        <li>Must include grade A in Chemistry and Biology.</li>
+
+        <li>Please note that A-level General Studies, Critical Thinking, Thinking Skills and Global Perspectives are not accepted by King's as one of your A levels.
+            However, if offered the grade achieved may be taken into account when considering whether or not to accept a candidate who has just fallen short of the conditions of their offer.</li>
+
+    </ul>
+
+        <p>Career prospects</p>
+        <p>Graduates from the School of Bioscience Education are equipped with a variety of transferable skills including data gathering, analysis and interpretation, presentation skills and teamwork.
+            Our graduates are well-qualified to undertake a wide range of careers or training for a PhD.</p>
+
+    </article>
+
+    <section class="images">
+        <img src="../static/images/courses/sciencestudents.jpg" th:src="@{/images/courses/sciencestudents.jpg}" alt="Molecular 1"/>
+
+    </section>
+
+    <section class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/tN64zV-I6iA" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+    </section>
+
+    <footer>
+        &copy; G. Laaz 2019
+    </footer>
+</main>
+</body>
+</html>

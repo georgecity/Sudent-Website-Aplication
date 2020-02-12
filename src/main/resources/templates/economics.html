@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}"/>
+    <script src="../static/js/main.js" th:src="@{/js/main.js}"></script>
+    <title>Economics</title>
+</head>
+<body>
+
+<main>
+    <header>
+        <img src="../static/images/city.jpg" th:src="@{/images/city.jpg}" alt="student banner"/>
+        <h2>Economics</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" th:href="@{/}">About Us</a></li>
+            <div class="dropdown">
+                <li>
+                    <a onclick="show_menu('Courses')" class="dropdownlink">Available Courses</a>
+                </li>
+                <div id="Courses" class="menuitems">
+                    <li><a href="maths.html" th:href="@{/maths}">Mathematics</a></li>
+                    <li><a href="physics.html" th:href="@{/physics}">Physics</a> </li>
+                    <li><a href="mechaelectrical.html" th:href="@{/mechaelectrical}">Mechanical and electrical Engineering</a> </li>
+                    <li><a href="medicine.html" th:href="@{/medicine}">Medicine</a> </li>
+                    <li><a href="mechanical.html" th:href="@{/mechanical}">Mechanical</a> </li>
+                    <li><a href="chemistry.html" th:href="@{/chemistry}">Chemistry</a></li>
+                    <li><a href="compscience.html" th:href="@{/compscience}">Computer Science</a> </li>
+                    <li><a href="law.html" th:href="@{/law}">Law</a> </li>
+                    <li><a href="economics.html" th:href="@{/economics}">Economics and Management</a> </li>
+                    <li><a href="biology.html" th:href="@{/biology}">Biology</a> </li>
+                    <li><a href="neuroscience.html" th:href="@{/neuroscience}">Neuroscience</a></li>
+                    <li><a href="politics.html" th:href="@{/politics}">Politics</a> </li>
+                    <li><a href="biomedical.html" th:href="@{/biomedical}">Biomedical Science</a> </li>
+                    <li><a href="nutrition.html" th:href="@{/nutrition}">Nutrition</a> </li>
+                    <li><a href="moleculargen.html" th:href="@{/moleculargen}">Molecular Genetics</a> </li>
+
+                </div>
+            </div>
+            <div class="dropdown">
+                <li>
+                    <a onclick="show_menu('Universities')" class="dropdownlink">Universities</a>
+                </li>
+                <div id="Universities" class="menuitems">
+                    <li><a href="aberdeen.html" th:href="@{/aberdeen}">Aberdeen University</a> </li>
+                    <li><a href="kings.html" th:href="@{/kings}">King's College</a> </li>
+                    <li><a href="oxford.html" th:href="@{/oxford}">Oxford University</a> </li>
+
+
+                </div>
+            </div>
+
+            <li><a href="register.html" th:href="@{/register}">Register</a></li>
+            <li><a href="apply.html" th:href="@{/apply}">Apply</a></li>
+            <li><a href="profile.html" th:href="@{/profile}">My Student Profile</a></li>
+        </ul>
+
+    </nav>
+    <article>
+        <p>The Economics and Management degree examines issues central to the world we live in:
+            namely how the economy and organisations function, and how resources are allocated and coordinated to achieve the organisation’s objectives.
+            Economics and Management are ideal intellectual partners, each particularly fitted to strengthen and cross-fertilise the other.</p>
+
+
+        <p>Economics is the study of how consumers, firms and governments make decisions that together determine how resources are allocated.
+            An appreciation of economics and the general workings of the economy have become increasingly necessary to understand government policy-making,
+            the conduct of businesses, and the enormous changes in economic systems which are occurring throughout the world.
+            It is also becoming increasingly important in both government and the private sector to have an understanding of some of the methods used within economics, such as quantitative methods, statistical and causal inference, and experimental methods.</p>
+
+        <p>Management is concerned with the effective use and coordination of materials and labour within an organisation in the pursuit of its defined objectives.
+            Management considers the interrelationship and interactions between distinct parts of an organisation, and between the organisation and its environment.
+            Students will look at theories, models and frameworks in order to understand how managers behave and to consider their role in the process of decision-making.</p>
+
+        <p>The teaching of this universityApplication is provided by both the Department of Economics and the Saïd Business School.
+            However, it is not a Business Studies degree. The programme is taught as an academic subject within the Social Sciences Division of the University.</p>
+
+
+
+        <p>Entrance requirements</p>
+    <ul>
+
+        <li>A*AA</li>
+        <li>(with Maths at A or A*)</li>
+
+    </ul>
+
+        <p>Careers</p>
+        <p> Graduates in Economics and Management are among the most sought after by employers.
+            Their current employers include leading international organisations in traditional activities, as well as new start-up companies in a variety of high-tech fields.
+            Recent graduates have secured positions in banking and finance, consultancy, research, journalism, industry, the Civil Service and teaching as well as a wide range of other sectors.</p>
+    </article>
+
+    <section class="images">
+        <img src="../static/images/courses/studentscomp.jpg" th:src="@{/images/courses/studentscomp.jpg}" alt="Economics 1"/>
+    </section>
+
+    <section class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/qvh3AEzALuo" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+    </section>
+
+    <footer>
+        &copy; G. Laaz 2019
+    </footer>
+</main>
+</body>
+</html>

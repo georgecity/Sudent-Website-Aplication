@@ -1,0 +1,38 @@
+Register into website and apply to a given univesity, 
+data is displayed in Student Profile
+
+HTML: src/main/resources/templates
+
+CSS: src/main/resources/static
+Responsive Images.
+Responsive Videos.
+Table Layout.
+Drop Down Menu Colours.
+Progress Bar Style.
+Text area Layout.
+Adaptation to mobile devices.
+
+Validation Behaviour: 
+register.html,
+Dropdown menus.
+password use of regular expression
+regular expression for email,
+fields restricted to text.
+fields restricted in leght.
+
+Client Side js:
+in navigation bar used to show more options on click.
+in Register page progress bar increases up to 100% each time field is used.
+
+Database Writes:
+register.html writes into StudentUser
+apply.html writes into UniversityApplication 
+when you login, login Historu is written  into Login History
+
+Database Reads:
+profile.html reads from University Application, Login history and StudentUser
+
+Security:BCrypt encryption for passwords.
+tls-Student.jks
+
+

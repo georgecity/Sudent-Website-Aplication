@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}"/>
+    <script src="../static/js/main.js" th:src="@{/js/main.js}"></script>
+    <title>StudentWebsite</title>
+</head>
+<body>
+
+<main>
+    <header>
+        <img src="../static/images/city.jpg" th:src="@{/images/city.jpg}" alt="student banner"/>
+        <h2>About Us</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" th:href="@{/}">About Us</a></li>
+            <div class="dropdown">
+                <li>
+                    <a onclick="show_menu('Courses')" class="dropdownlink">Available Courses</a>
+                </li>
+                <div id="Courses" class="menuitems">
+                    <li><a href="maths.html" th:href="@{/maths}">Mathematics</a></li>
+                    <li><a href="physics.html" th:href="@{/physics}">Physics</a> </li>
+                    <li><a href="mechaelectrical.html" th:href="@{/mechaelectrical}">Mechanical and electrical Engineering</a> </li>
+                    <li><a href="medicine.html" th:href="@{/medicine}">Medicine</a> </li>
+                    <li><a href="mechanical.html" th:href="@{/mechanical}">Mechanical</a> </li>
+                    <li><a href="chemistry.html" th:href="@{/chemistry}">Chemistry</a></li>
+                    <li><a href="compscience.html" th:href="@{/compscience}">Computer Science</a> </li>
+                    <li><a href="law.html" th:href="@{/law}">Law</a> </li>
+                    <li><a href="economics.html" th:href="@{/economics}">Economics and Management</a> </li>
+                    <li><a href="biology.html" th:href="@{/biology}">Biology</a> </li>
+                    <li><a href="neuroscience.html" th:href="@{/neuroscience}">Neuroscience</a></li>
+                    <li><a href="politics.html" th:href="@{/politics}">Politics</a> </li>
+                    <li><a href="biomedical.html" th:href="@{/biomedical}">Biomedical Science</a> </li>
+                    <li><a href="nutrition.html" th:href="@{/nutrition}">Nutrition</a> </li>
+                    <li><a href="moleculargen.html" th:href="@{/moleculargen}">Molecular Genetics</a> </li>
+
+                </div>
+            </div>
+            <div class="dropdown">
+                <li>
+                    <a onclick="show_menu('Universities')" class="dropdownlink">Universities</a>
+                </li>
+                <div id="Universities" class="menuitems">
+                    <li><a href="aberdeen.html" th:href="@{/aberdeen}">Aberdeen University</a> </li>
+                    <li><a href="kings.html" th:href="@{/kings}">King's College</a> </li>
+                    <li><a href="oxford.html" th:href="@{/oxford}">Oxford University</a> </li>
+
+
+                </div>
+            </div>
+
+            <li><a href="register.html" th:href="@{/register}">Register</a></li>
+            <li><a href="apply.html" th:href="@{/apply}">Apply</a></li>
+            <li><a href="profile.html" th:href="@{/profile}">My Student Profile</a></li>
+        </ul>
+
+    </nav>
+    <article>
+        <p>Start a university university Application in September. </p>
+
+        <p>Search courses at different universities and colleges –
+            find key university Application information and entry requirements.
+        </p>
+
+        <p>With so many courses on offer – and not just in the subject areas you would expect –
+            there will be courses in subjects and subject combinations you’ve never even considered,
+            so it’s important you explore the different options thoroughly.</p>
+
+        <p>Choose a subject – the important thing is to choose a subject
+            you enjoy that will help you reach your goals.
+            Think about what you’re aiming to get out of the universityApplication – career progression,
+            career change, or the chance to study a subject you love in more depth.
+            Look at our subject guides to understand what the different subject areas have to offer
+            – including graduate destinations, entry requirements, and personal statement tips.
+            Browse the UCAS search tool for inspiration on the types of cours you can study
+            – don’t forget to use the subject filters to narrow your search.</p>
+
+        <p>Here’s how to get started:
+            Search for undergraduate courses from the search bar at the top of this page.
+            If it isn't selected already, select ‘Courses’ from the first drop-down menu.
+            Select the universityApplication scheme you'd like to search under – e.g. 'Undergraduate'.
+            Enter the subject you’re interested in studying.
+            Click the search icon.
+            By entering these details, you’ll only see relevant courses for the universityApplication scheme,
+            year, and subject you’re interested in. You can also browse by subject in the search tool</p>
+
+        <p>Our subject guides include information on studying,
+            courses, careers, and much more:</p>
+
+        <ul>
+            <li>Accounting & Finance</li>
+            <li>Aeronautical & Manufacturing Engineering</li>
+            <li>Architecture</li>
+            <li>Biological Sciences</li>
+            <li>Art & Design</li>
+            <li>Chemistry</li>
+            <li>Computer Science</li>
+            <li>Dentistry</li>
+            <li>Economics</li>
+            <li>Law</li>
+            <li>Mathematics</li>
+            <li>Medicine</li>
+            <li>Mechanical Engineering</li>
+            <li>Physics and Astronomy</li>
+            <li>Robotics</li>
+
+        </ul>
+
+        <p>It's important to understand your rights as a consumer when choosing a universityApplication and university or college –
+            you’ll be investing a lot of time, money, and effort, and it can be difficult to change if you’re not satisfied.
+            Knowing your rights under consumer law will help you make sure you get all the information you need,
+            and are treated fairly during your studies</p>
+    </article>
+
+    <section class="images">
+            <img src="../static/images/graduates.jpg" th:src="@{/images/graduates.jpg}" alt="Graduates 1"/>
+        </section>
+
+
+    <footer>
+        &copy; G. Laaz 2019
+    </footer>
+</main>
+</body>
+</html>

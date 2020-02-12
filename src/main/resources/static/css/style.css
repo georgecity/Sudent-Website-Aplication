@@ -1,0 +1,287 @@
+/*
+Set the box-sizing to border to incorporate the border into box size calulations.
+
+ */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif;
+}
+
+/*
+Set the main section to be centred on the page by setting margin auto on the left and right margins. Set up
+grid display within main section. Split into 12 columns
+ */
+main {
+    margin: 0 auto;
+    max-width: 60rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: min-content;
+    grid-gap: 1rem;
+}
+
+/*
+Set the header to span all columns and take up 1 row
+ */
+header {
+    grid-column: 1 / -1;
+    grid-row: 1;
+}
+
+/*
+Set up the header image to take up the full width of the header section
+
+ */
+header img {
+    width: 100%;
+    filter: brightness(80%);
+}
+
+/*
+Overlay the image with h2 text scaled to 4 rem
+ */
+header h2{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+
+/*
+Add the nav bar down the side taking up
+3 of the 12 columns
+ */
+nav {
+    grid-column: 1 / 3 ;
+    grid-row: 2;
+
+}
+
+/*
+Put the article section in the first row under the header, taking
+up the all the columns after the nav bar (col 4 to 12)
+ */
+article {
+    grid-column: 4 / -1;
+    grid-row: 2;
+}
+
+/*
+Each section should also span the full width after the nav bar
+(cols 4 through 12)
+ */
+section {
+    grid-column: 4 / -1;
+}
+
+
+/*
+Put the images section in the 3 row (after header and article) and use
+flex to display the images in a line.
+ */
+.images {
+    grid-row: 3;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+
+}
+
+/*
+Put the video section after the images
+ */
+.video {
+    grid-row: 4;
+}
+
+/*
+Set each image in the images section to take up 30% of the width
+ */
+
+section img {
+    width: 60%;
+    height: 45%;
+}
+
+
+/*
+Put the foot into the last row, spanning all the columns
+ */
+footer {
+    text-align: center;
+    grid-column: 1 / -1;
+    grid-row: 5;
+}
+
+nav li {
+    list-style-type:none;
+    margin:0;
+    padding:0
+}
+
+nav a {
+    display:block;
+    background-color: black;
+    color:#ffffff;
+    padding:0.2rem;
+    margin-right:0.1rem;
+    margin-bottom:0.1rem;
+}
+
+a:hover {
+    font-size: 1.2rem;
+}
+
+.responsive {
+    max-width: 100%;
+}
+
+input[type=number]{
+    font-size: 1.2rem;
+}
+
+#result {
+    font-size: 1.2rem;
+}
+
+@media screen and (max-device-width: 30rem) {
+
+    /*
+    For mobile devices move the nav section to be a row rather than a side bar
+     */
+    nav {
+        grid-column: 1 / -1;
+
+    }
+
+    /*
+    Change the list of links to display horizontally (using flex)
+     */
+    nav ul {
+        display: flex;
+    }
+
+    nav a {
+        font-size: 2.2rem;
+        padding: 1rem;
+    }
+
+    /*
+    Change the article to span all the columns
+     */
+    article {
+        grid-column: 1 / -1;
+        grid-row: 3;
+    }
+
+    /*
+    Set all sections to span all 12 columns
+     */
+    section {
+        grid-column: 1 / -1;
+    }
+
+    .images {
+        grid-row: 4;
+    }
+
+    .video {
+        grid-row: 5;
+    }
+
+    footer {
+        grid-row: 6;
+    }
+
+
+}
+
+
+.dropdownlink a {
+    display:block;
+    background-color: black;
+    color:#ffffff;
+    padding:0.2rem;
+    margin-right:0.1rem;
+    margin-bottom:0.1rem;
+    text-decoration: underline;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.menuitems {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    z-index: 1;
+}
+
+.menuitems a {
+    display:block;
+    background-color: black;
+    color:#ffffff;
+    padding:0.2rem;
+    margin-right:0.1rem;
+    margin-bottom:0.1rem;
+}
+
+/*
+Handles the style, time animation and size of Register Progress Bar.
+ */
+#barHolder {
+    background-color: black;
+    width: 100%;
+    height: 30px;
+}
+#bar {
+    background-color: green;
+    width:1%;
+    height: 30px;
+    transition: width 2s; /* Add this */
+}
+#byX {
+    background-color: grey;
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding-top: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+/*
+text area production and design for university application page.
+ */
+textarea{
+    resize: none;
+    width: 500px;
+    height: 150px;
+    position: static;
+}
+
+/*
+table layout for apply, register and profile pages.
+ */
+
+table  {
+    width: 75%;
+    padding: 15px;
+    color: black;
+    text-align: left;
+    height: 25px;
+    vertical-align: center;
+}
+
+
+.show {display:block;}
